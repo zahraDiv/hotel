@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: iran;
+       
+    }
+}
+
+@layer utilities {
+    .row {
+        @apply w-full flex flex-wrap
+    }
+}
+
+
+
+/* npx @tailwindcss/cli -i ./src/assets/stylesheet/main.css -o ./src/assets/stylesheet/output.css --watch */
+
+
+@font-face {
+    font-family: iran;
+    src: url(../font/iran.ttf);
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+@keyframes borderMove {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+.animated-border {
+  background: linear-gradient(90deg, #fbbf24, #ffffff, #fbbf24, #ffffff);
+  background-size: 300%;
+  animation: borderMove 4s linear infinite;
+}
