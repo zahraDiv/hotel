@@ -1,1 +1,1 @@
-[# hotel](https://zahradiv.github.io/hotel/)
+https://zahradiv.github.io/hotel/
